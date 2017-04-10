@@ -1,0 +1,7 @@
+.ipynb_checkpoints
+.*.swp
+.DS_Store
+examples
+data
+output_images
+model
