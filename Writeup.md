@@ -127,7 +127,7 @@ In an attempt to smooth out the bounding boxes and remove even more false positi
 
 I attempted to tweak how many previous frames to consider and what the new threshold should be. This helped to some extent, but not as much as I was hoping.
 
-### Here are five frames and their corresponding heat maps:
+### Here are six frames and their corresponding heat maps:
 
 ![alt text][detect_stages0]
 ![alt text][detect_stages1]
