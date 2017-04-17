@@ -26,7 +26,7 @@ The goals / steps of this project are the following:
 [detect_stages3]: ./images/detect_stages3.jpg "Example image going through the pipeline"
 [detect_stages4]: ./images/detect_stages4.jpg "Example image going through the pipeline"
 [detect_stages5]: ./images/detect_stages5.jpg "Example image going through the pipeline"
-[video]: ./project_video.mp4
+[video]: ./project_output.mp4
 
 ---
 
