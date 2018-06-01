@@ -1,12 +1,16 @@
-**Vehicle Detection Project**
+# Vehicle Detection Project
 
-The goals / steps of this project are the following:
+## Overview
+
+The goal of this project is to write a software pipeline to detect vehicles in a video.
+
+Pipeline steps
 
 * Perform a Histogram of Oriented Gradients (HOG) feature extraction on a labeled training set of images and train a classifier Linear SVM classifier
-* Optionally, you can also apply a color transform and append binned color features, as well as histograms of color, to your HOG feature vector. 
+* Optionally, also apply a color transform and append binned color features, as well as histograms of color, to the HOG feature vector. 
 * Note: for those first two steps don't forget to normalize your features and randomize a selection for training and testing.
-* Implement a sliding-window technique and use your trained classifier to search for vehicles in images.
-* Run your pipeline on a video stream (start with the test_video.mp4 and later implement on full project_video.mp4) and create a heat map of recurring detections frame by frame to reject outliers and follow detected vehicles.
+* Implement a sliding-window technique and use the trained classifier to search for vehicles in images.
+* Run the pipeline on a video stream and create a heat map of recurring detections frame by frame to reject outliers and follow detected vehicles.
 * Estimate a bounding box for vehicles detected.
 
 [//]: # (Image References)
@@ -34,7 +38,7 @@ I have provided an [HTML](./Vehicle-Detection.html) file with all of the cells r
 
 ---
 
-### Histogram of Oriented Gradients (HOG)
+## Histogram of Oriented Gradients (HOG)
 
 #### 1. Explain how (and identify where in your code) you extracted HOG features from the training images.
 
@@ -79,7 +83,7 @@ The final feature set used for training the classifier included 6,108 features:
 | HOG  | 5,292 |
 | Total  | 6,108  |
 
-### Sliding Window Search
+## Sliding Window Search
 
 #### 1. Describe how (and identify where in your code) you implemented a sliding window search.  How did you decide what scales to search and how much to overlap windows?
 
@@ -113,7 +117,7 @@ While I wish I could have spent more time optimizing the speed of the classifier
 
 ---
 
-### Video Implementation
+## Video Implementation
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (somewhat wobbly or unstable bounding boxes are ok as long as you are identifying the vehicles most of the time with minimal false positives.)
 
@@ -127,7 +131,7 @@ In an attempt to smooth out the bounding boxes and remove even more false positi
 
 I attempted to tweak how many previous frames to consider and what the new threshold should be. This helped to some extent, but not as much as I was hoping.
 
-### Here are six frames and their corresponding heat maps:
+## Here are six frames and their corresponding heat maps:
 
 ![alt text][detect_stages0]
 ![alt text][detect_stages1]
@@ -138,7 +142,7 @@ I attempted to tweak how many previous frames to consider and what the new thres
 
 ---
 
-### Discussion
+## Discussion
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
